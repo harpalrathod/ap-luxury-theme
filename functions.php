@@ -10,6 +10,7 @@ if ( ! defined( 'AP_LUXURY_VERSION' ) ) {
 }
 
 require_once get_template_directory() . '/inc/customizer.php';
+require_once get_template_directory() . '/inc/schema.php';
 
 function ap_luxury_setup() {
 	load_theme_textdomain( 'ap-luxury', get_template_directory() . '/languages' );
