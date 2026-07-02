@@ -4,6 +4,7 @@
  *
  * @package AP_Luxury
  */
+$offer_text = ap_luxury_get_option( 'ap_luxury_offer', 'Join the AP beauty list for first-visit offers and beauty updates.' );
 ?>
 <div class="ap-offer-popup" data-offer-popup aria-hidden="true">
 	<div class="ap-offer-backdrop" data-offer-close></div>
@@ -11,7 +12,7 @@
 		<button class="ap-offer-close" type="button" data-offer-close aria-label="Close offer">&times;</button>
 		<p class="eyebrow">First Visit Offer</p>
 		<h2 id="ap-offer-title">Enjoy a little luxury on your first appointment.</h2>
-		<p>Join the AP's Thread Salon beauty list for threading, waxing, facial care updates, and special salon offers.</p>
+		<p><?php echo esc_html( $offer_text ); ?></p>
 		<form class="ap-offer-form" action="#" method="post">
 			<label class="screen-reader-text" for="ap-offer-email">Email address</label>
 			<input id="ap-offer-email" type="email" name="email" placeholder="Enter your email" required>
