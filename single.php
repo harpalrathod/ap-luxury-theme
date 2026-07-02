@@ -22,4 +22,5 @@ get_header();
 		<?php endwhile; ?>
 	</div>
 </section>
+<?php get_template_part( 'template-parts/cta-booking' ); ?>
 <?php get_footer();
