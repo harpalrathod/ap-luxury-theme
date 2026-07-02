@@ -14,6 +14,7 @@ require_once get_template_directory() . '/inc/schema.php';
 require_once get_template_directory() . '/inc/starter-content.php';
 require_once get_template_directory() . '/inc/performance.php';
 require_once get_template_directory() . '/inc/shortcodes.php';
+require_once get_template_directory() . '/inc/body-classes.php';
 
 function ap_luxury_setup() {
 	load_theme_textdomain( 'ap-luxury', get_template_directory() . '/languages' );
