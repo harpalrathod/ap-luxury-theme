@@ -4,12 +4,7 @@
  *
  * @package AP_Luxury
  */
-$highlights = array(
-	array( 'Eyebrow Threading in Rockwall', 'Precision brow shaping for clean definition, natural balance, and a polished everyday look.' ),
-	array( 'Facial Threading', 'Smooth facial hair removal for upper lip, chin, sides, and full face services with careful technique.' ),
-	array( 'Waxing Services', 'Efficient waxing options for guests who want smooth skin and a refined salon experience.' ),
-	array( 'Facial Care', 'Relaxing beauty treatments created to refresh the skin and support a soft, healthy-looking glow.' ),
-);
+$highlights = ap_luxury_service_highlights_data();
 ?>
 <section class="ap-section service-highlights-section">
 	<div class="ap-container">
