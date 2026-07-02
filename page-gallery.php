@@ -9,15 +9,15 @@ get_header();
 <section class="ap-section page-hero small-hero">
 	<div class="ap-container content-narrow centered">
 		<p class="eyebrow">Gallery</p>
-		<h1>Clean lines, soft finishes, beautiful brows.</h1>
-		<p>A visual preview of the AP Luxury look. Replace placeholders with your salon and before/after images.</p>
+		<h1>Photo Gallery</h1>
+		<p>Browse AP's Thread Salon photos and beauty inspiration.</p>
 	</div>
 </section>
-<section class="ap-section">
-	<div class="ap-container gallery-grid">
-		<?php for ( $i = 1; $i <= 9; $i++ ) : ?>
-			<a class="gallery-item reveal-up" href="<?php echo esc_url( home_url( '/booking/' ) ); ?>" aria-label="<?php esc_attr_e( 'Book an appointment', 'ap-luxury' ); ?>"></a>
-		<?php endfor; ?>
+<section class="ap-section gallery-page-section">
+	<div class="ap-container luxury-content">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
 	</div>
 </section>
 <?php get_footer();
