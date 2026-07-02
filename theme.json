@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "slug": "emerald", "name": "AP Emerald", "color": "#0f3b2f" },
+        { "slug": "gold", "name": "AP Gold", "color": "#c6a25a" },
+        { "slug": "ivory", "name": "AP Ivory", "color": "#faf8f4" },
+        { "slug": "beige", "name": "AP Beige", "color": "#f2ece3" },
+        { "slug": "charcoal", "name": "AP Charcoal", "color": "#252525" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        { "slug": "playfair", "name": "Playfair Display", "fontFamily": "Playfair Display, Georgia, serif" },
+        { "slug": "inter", "name": "Inter", "fontFamily": "Inter, Arial, sans-serif" }
+      ],
+      "fluid": true
+    },
+    "layout": {
+      "contentSize": "820px",
+      "wideSize": "1280px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#faf8f4",
+      "text": "#252525"
+    },
+    "typography": {
+      "fontFamily": "Inter, Arial, sans-serif"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "Playfair Display, Georgia, serif"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#0f3b2f"
+        }
+      }
+    }
+  }
+}
