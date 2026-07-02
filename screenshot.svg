@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f3b2f"/>
+      <stop offset="0.58" stop-color="#173f34"/>
+      <stop offset="1" stop-color="#f2ece3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#faf8f4"/>
+  <rect width="1200" height="560" fill="url(#g)"/>
+  <circle cx="150" cy="105" r="48" fill="none" stroke="#c6a25a" stroke-width="3"/>
+  <text x="150" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#c6a25a">AP</text>
+  <text x="95" y="360" font-family="Georgia, serif" font-size="92" fill="#fff">Beautiful Brows.</text>
+  <text x="95" y="458" font-family="Georgia, serif" font-size="92" fill="#fff">Timeless Confidence.</text>
+  <rect x="95" y="510" width="210" height="54" rx="27" fill="#c6a25a"/>
+  <text x="200" y="544" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#fff">BOOK NOW</text>
+  <text x="95" y="670" font-family="Georgia, serif" font-size="54" fill="#0f3b2f">AP Luxury</text>
+  <text x="95" y="720" font-family="Arial" font-size="24" fill="#706b64">Boutique WordPress theme for AP's Thread Salon</text>
+</svg>
