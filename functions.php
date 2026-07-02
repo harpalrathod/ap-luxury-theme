@@ -10,6 +10,7 @@ if ( ! defined( 'AP_LUXURY_VERSION' ) ) {
 }
 
 require_once get_template_directory() . '/inc/customizer.php';
+require_once get_template_directory() . '/inc/site-content.php';
 require_once get_template_directory() . '/inc/schema.php';
 require_once get_template_directory() . '/inc/starter-content.php';
 require_once get_template_directory() . '/inc/performance.php';
