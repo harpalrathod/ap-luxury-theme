@@ -10,12 +10,12 @@
 
 function ap_luxury_services_data() {
 	return array(
-		'Haircut' => array(
-			array( 'Hair Cut', 'Fresh haircut and salon shaping.', '$24.00 & up' ),
-			array( 'Dandruff Treatment', 'Scalp-focused treatment for a cleaner, refreshed feel.', '$30.00 & up' ),
+		'Hair Cut' => array(
+			array( 'Hair cut', 'Fresh haircut and salon shaping.', '$24.00 & up' ),
+			array( 'Dandruff treatment', 'Scalp-focused treatment for a cleaner, refreshed feel.', '$30.00 & up' ),
 			array( 'Long Layer', 'Layered haircut service for longer hair.', '$25.00 & up' ),
-			array( 'Blow-dry / Style', 'Polished blow-dry and styling finish.', '$25.00 & up' ),
-			array( 'Hair Straightening', 'Smooth styling service for a straight, finished look.', '$30.00 & up' ),
+			array( 'Blow-dry/Style', 'Polished blow-dry and styling finish.', '$25.00 & up' ),
+			array( 'Hair straightening', 'Smooth styling service for a straight, finished look.', '$30.00 & up' ),
 		),
 		'Hair Color' => array(
 			array( 'Root Touch-up', 'Color refresh for root regrowth.', '$50.00 & up' ),
@@ -30,6 +30,9 @@ function ap_luxury_services_data() {
 			array( 'Hot Oil Head Massage', 'Relaxing hot oil head massage service.', '$35.00 & up' ),
 			array( 'Herbal Hair Mask', 'Herbal hair mask treatment for refreshed hair care.', '$40.00' ),
 			array( 'Herbal Henna for Hair', 'Herbal henna service for hair.', '$50.00 & up' ),
+		),
+		'Special Services' => array(
+			array( 'Henna Tattoos', 'Beautiful henna tattoo designs for special occasions and everyday style.', '$15 & up' ),
 		),
 		'Eyebrow Threading' => array(
 			array( 'Eyebrow Threading', 'Signature brow shaping with clean definition.', '$12+' ),
@@ -55,10 +58,10 @@ function ap_luxury_services_data() {
 
 function ap_luxury_service_highlights_data() {
 	return array(
-		array( 'Haircut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
+		array( 'Hair Cut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
 		array( 'Hair Color Services', 'Root touch-ups, full color, highlights, men\'s color, deep conditioning, and hair wash services.' ),
 		array( 'Massage and Herbal Hair Care', 'Hot oil head massage, herbal hair mask, and herbal henna services for a refreshed salon experience.' ),
-		array( 'Eyebrow Threading in Rockwall', 'Precision brow shaping for clean definition, natural balance, and a polished everyday look.' ),
+		array( 'Special Services', 'Henna tattoos and beauty services for special occasions and everyday style.' ),
 	);
 }
 
@@ -77,6 +80,7 @@ function ap_luxury_faqs_data() {
 		array( 'Do you offer haircuts?', 'Yes. AP\'s Thread Salon offers haircut and styling services including hair cut, long layer, blow-dry, straightening, and dandruff treatment.' ),
 		array( 'Do you offer hair color?', 'Yes. AP\'s Thread Salon offers root touch-up, full hair color, men\'s hair color, highlights, deep conditioning, and hair wash services.' ),
 		array( 'Do you offer massage and herbal hair care?', 'Yes. AP\'s Thread Salon offers hot oil head massage, herbal hair mask, and herbal henna for hair.' ),
+		array( 'Do you offer henna tattoos?', 'Yes. Henna tattoos are available under Special Services.' ),
 		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
 		array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
 		array( 'Do you offer facial threading?', 'Yes. AP\'s Thread Salon offers targeted facial threading services such as upper lip, chin, sides, and full face threading.' ),
