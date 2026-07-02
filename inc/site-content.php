@@ -10,6 +10,13 @@
 
 function ap_luxury_services_data() {
 	return array(
+		'Haircut' => array(
+			array( 'Hair Cut', 'Fresh haircut and salon shaping.', '$24.00 & up' ),
+			array( 'Dandruff Treatment', 'Scalp-focused treatment for a cleaner, refreshed feel.', '$30.00 & up' ),
+			array( 'Long Layer', 'Layered haircut service for longer hair.', '$25.00 & up' ),
+			array( 'Blow-dry / Style', 'Polished blow-dry and styling finish.', '$25.00 & up' ),
+			array( 'Hair Straightening', 'Smooth styling service for a straight, finished look.', '$30.00 & up' ),
+		),
 		'Eyebrow Threading' => array(
 			array( 'Eyebrow Threading', 'Signature brow shaping with clean definition.', '$12+' ),
 			array( 'Eyebrow Cleanup', 'Maintenance for already-shaped brows.', '$10+' ),
@@ -34,10 +41,10 @@ function ap_luxury_services_data() {
 
 function ap_luxury_service_highlights_data() {
 	return array(
+		array( 'Haircut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
 		array( 'Eyebrow Threading in Rockwall', 'Precision brow shaping for clean definition, natural balance, and a polished everyday look.' ),
 		array( 'Facial Threading', 'Smooth facial hair removal for upper lip, chin, sides, and full face services with careful technique.' ),
 		array( 'Waxing Services', 'Efficient waxing options for guests who want smooth skin and a refined salon experience.' ),
-		array( 'Facial Care', 'Relaxing beauty treatments created to refresh the skin and support a soft, healthy-looking glow.' ),
 	);
 }
 
@@ -53,10 +60,11 @@ function ap_luxury_promotions_data() {
 function ap_luxury_faqs_data() {
 	return array(
 		array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
+		array( 'Do you offer haircuts?', 'Yes. AP\'s Thread Salon offers haircut and styling services including hair cut, long layer, blow-dry, straightening, and dandruff treatment.' ),
 		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
 		array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
 		array( 'Do you offer facial threading?', 'Yes. AP\'s Thread Salon offers targeted facial threading services such as upper lip, chin, sides, and full face threading.' ),
-		array( 'Do you offer waxing?', 'Yes. Waxing services are available for selected areas. Visit the Services page or book an appointment for details.' ),
+		array( 'Do you offer waxing?', 'Yes. Waxing services are available for selected areas. Visit the Services page or call for details.' ),
 		array( 'Where are you located?', ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' ) ),
 	);
 }
