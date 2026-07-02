@@ -42,6 +42,7 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		</div>
 	</div>
 </footer>
+<?php get_template_part( 'template-parts/popup-offer' ); ?>
 <a class="floating-book" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>"><?php esc_html_e( 'Book Now', 'ap-luxury' ); ?></a>
 <?php wp_footer(); ?>
 </body>
