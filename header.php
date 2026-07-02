@@ -4,6 +4,8 @@
  *
  * @package AP_Luxury
  */
+$ap_phone = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
+$tel_link = preg_replace( '/[^0-9+]/', '', $ap_phone );
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -41,7 +43,7 @@
 			?>
 		</nav>
 
-		<a class="header-cta" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>"><?php esc_html_e( 'Book Now', 'ap-luxury' ); ?></a>
+		<a class="header-cta" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 	</div>
 </header>
 <main id="primary" class="site-main">
