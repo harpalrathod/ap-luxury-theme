@@ -11,6 +11,8 @@
 }
 body{background:var(--ivory);color:var(--charcoal)}
 .site-header.is-scrolled,.body-not-home .site-header{background:rgba(255,249,246,.96);color:var(--emerald)}
+.menu-toggle span{background:#fff}
+.site-header.is-scrolled .menu-toggle span,.body-not-home .site-header .menu-toggle span{background:#fff}
 .hero-bg{background:linear-gradient(120deg,rgba(111,78,87,.9),rgba(111,78,87,.48)),radial-gradient(circle at 80% 35%,rgba(200,169,106,.24),transparent 34%),linear-gradient(135deg,#6f4e57,#b98b91 45%,#fff9f6)}
 .page-hero{background:linear-gradient(135deg,#6f4e57,#b98b91);color:#fff}
 .why-section{background:var(--beige)}
