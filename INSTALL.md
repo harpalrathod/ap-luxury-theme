@@ -21,6 +21,7 @@ Create these WordPress pages and assign the matching template from the Page sett
 - Home — use the site front page
 - About — Template: About
 - Services — Template: Services & Pricing
+- Aftercare — Template: Aftercare Guide
 - Gallery — Template: Gallery
 - Booking — Template: Booking
 - Promotions — Template: Promotions & Membership
@@ -46,6 +47,7 @@ Go to **Appearance → Menus** and create a menu with:
 - Home
 - About
 - Services
+- Aftercare
 - Gallery
 - Promotions
 - Testimonials
