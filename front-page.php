@@ -6,13 +6,17 @@
  */
 
 get_header();
+$hero_kicker = ap_luxury_get_option( 'ap_luxury_hero_kicker', "Rockwall's Boutique Threading Studio" );
+$hero_title  = ap_luxury_get_option( 'ap_luxury_hero_title', 'Beautiful Brows. Timeless Confidence.' );
+$hero_text   = ap_luxury_get_option( 'ap_luxury_hero_text', 'Precision eyebrow threading, facial threading, waxing, and glow-focused beauty care in a calm luxury setting.' );
+$ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' );
 ?>
 <section class="hero hero-luxury">
 	<div class="hero-bg" aria-hidden="true"></div>
 	<div class="ap-container hero-inner reveal-up">
-		<p class="eyebrow">Rockwall's Boutique Threading Studio</p>
-		<h1>Beautiful Brows.<br>Timeless Confidence.</h1>
-		<p class="hero-copy">Precision eyebrow threading, facial threading, waxing, and glow-focused beauty care in a calm luxury setting.</p>
+		<p class="eyebrow"><?php echo esc_html( $hero_kicker ); ?></p>
+		<h1><?php echo esc_html( $hero_title ); ?></h1>
+		<p class="hero-copy"><?php echo esc_html( $hero_text ); ?></p>
 		<div class="hero-actions">
 			<a class="btn btn-gold" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book Appointment</a>
 			<a class="btn btn-outline" href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Explore Services</a>
@@ -96,6 +100,8 @@ get_header();
 	</div>
 </section>
 
+<?php get_template_part( 'template-parts/newsletter' ); ?>
+
 <section class="ap-section location-section">
 	<div class="ap-container two-column align-center">
 		<div>
@@ -104,7 +110,7 @@ get_header();
 			<p>Book your next threading, waxing, or facial appointment and experience beauty care with a premium boutique touch.</p>
 			<a class="btn btn-gold" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book Now</a>
 		</div>
-		<div class="map-card">Google Map Embed</div>
+		<div class="map-card"><?php echo esc_html( $ap_map ); ?></div>
 	</div>
 </section>
 <?php
