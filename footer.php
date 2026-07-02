@@ -38,6 +38,7 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 	<div class="footer-bottom">
 		<div class="ap-container">
 			<p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All rights reserved.', 'ap-luxury' ); ?></p>
+			<p class="footer-legal"><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a> <span>|</span> <a href="<?php echo esc_url( home_url( '/terms/' ) ); ?>">Terms of Service</a></p>
 		</div>
 	</div>
 </footer>
