@@ -8,6 +8,7 @@ get_header();
 $areas = array( 'Rockwall', 'Heath', 'Fate', 'Rowlett', 'Royse City', 'Wylie' );
 $services = array( 'Eyebrow Threading', 'Facial Threading', 'Waxing', 'Facials' );
 ?>
+<style>.service-area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.area-list{display:flex;flex-wrap:wrap;gap:14px}.area-list span{background:#fff;border-radius:999px;padding:14px 20px;color:var(--emerald);font-weight:800}@media(max-width:980px){.service-area-grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.service-area-grid{grid-template-columns:1fr}}</style>
 <section class="ap-section page-hero small-hero">
 	<div class="ap-container content-narrow centered">
 		<p class="eyebrow">Service Area</p>
