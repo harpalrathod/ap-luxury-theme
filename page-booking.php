@@ -35,5 +35,5 @@ $tel_link = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		</aside>
 	</div>
 </section>
-<?php get_template_part( 'newsletter' ); ?>
+<?php get_template_part( 'template-parts/newsletter' ); ?>
 <?php get_footer();
