@@ -23,10 +23,10 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		<div>
 			<h2><?php esc_html_e( 'Services', 'ap-luxury' ); ?></h2>
 			<ul>
-				<li><?php esc_html_e( 'Eyebrow Threading', 'ap-luxury' ); ?></li>
-				<li><?php esc_html_e( 'Facial Threading', 'ap-luxury' ); ?></li>
+				<li><?php esc_html_e( 'Threading', 'ap-luxury' ); ?></li>
 				<li><?php esc_html_e( 'Waxing', 'ap-luxury' ); ?></li>
 				<li><?php esc_html_e( 'Facials', 'ap-luxury' ); ?></li>
+				<li><?php esc_html_e( 'Hair Services', 'ap-luxury' ); ?></li>
 			</ul>
 		</div>
 		<div>
@@ -42,7 +42,6 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		</div>
 	</div>
 </footer>
-<?php get_template_part( 'template-parts/popup-offer' ); ?>
 <a class="floating-book" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 <?php wp_footer(); ?>
 </body>
