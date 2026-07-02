@@ -25,6 +25,9 @@ Create these WordPress pages and assign the matching template from the Page sett
 - Booking — Template: Booking
 - Promotions — Template: Promotions & Membership
 - Testimonials — Template: Testimonials & Reviews
+- FAQ — Template: FAQ
+- Service Area — Template: Service Area
+- Setup Guide — Template: Theme Setup Guide
 - Contact — Template: Contact
 
 ## 4. Set the homepage
@@ -44,6 +47,8 @@ Go to **Appearance → Menus** and create a menu with:
 - Gallery
 - Promotions
 - Testimonials
+- FAQ
+- Service Area
 - Contact
 - Booking
 
@@ -66,7 +71,16 @@ Go to **Appearance → Customize → AP Luxury Business Info** and update:
 - Instagram URL
 - Google Map text/embed placeholder
 
-## 8. Booking widget
+## 8. Update homepage copy
+
+Go to **Appearance → Customize → AP Luxury Homepage** and update:
+
+- Hero kicker
+- Hero title
+- Hero text
+- First visit offer
+
+## 9. Booking widget
 
 Open the Booking page and paste your booking provider code or shortcode into the page content area.
 
@@ -77,7 +91,13 @@ Recommended providers:
 - Fresha
 - Booksy
 
-## 9. Recommended plugins
+## 10. Reviews and Instagram
+
+Use a reviews plugin shortcode on the Testimonials page reviews widget area.
+
+Use an Instagram feed plugin or replace the homepage Instagram placeholders with real salon posts.
+
+## 11. Recommended plugins
 
 - Rank Math SEO
 - WPForms
@@ -85,7 +105,10 @@ Recommended providers:
 - Google Reviews plugin
 - LiteSpeed Cache or WP Rocket
 - Imagify or ShortPixel
+- WooCommerce for gift cards or beauty product sales
 
-## 10. Final setup notes
+## 12. Final setup notes
 
 Replace placeholder gradients with real salon photos when available. Use compressed WebP images for best mobile speed.
+
+Before launch, review `RELEASE_CHECKLIST.md` in this repository.
