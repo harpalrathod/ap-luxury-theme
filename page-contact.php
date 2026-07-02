@@ -35,4 +35,5 @@ $tel_link     = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		<div class="map-card contact-map"><?php echo esc_html( $ap_map ); ?></div>
 	</div>
 </section>
+<?php get_template_part( 'template-parts/contact-form' ); ?>
 <?php get_footer();
