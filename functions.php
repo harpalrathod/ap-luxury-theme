@@ -11,6 +11,7 @@ if ( ! defined( 'AP_LUXURY_VERSION' ) ) {
 
 require_once get_template_directory() . '/inc/customizer.php';
 require_once get_template_directory() . '/inc/schema.php';
+require_once get_template_directory() . '/inc/starter-content.php';
 
 function ap_luxury_setup() {
 	load_theme_textdomain( 'ap-luxury', get_template_directory() . '/languages' );
@@ -23,6 +24,7 @@ function ap_luxury_setup() {
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'assets/css/editor.css' );
+	add_theme_support( 'starter-content', ap_luxury_starter_content() );
 	add_theme_support( 'woocommerce' );
 	add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-lightbox' );
