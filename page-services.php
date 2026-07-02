@@ -52,4 +52,6 @@ $groups = array(
 		<?php endforeach; ?>
 	</div>
 </section>
+<?php get_template_part( 'template-parts/newsletter' ); ?>
+<?php get_template_part( 'template-parts/cta-booking' ); ?>
 <?php get_footer();
