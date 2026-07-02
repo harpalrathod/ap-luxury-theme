@@ -22,15 +22,31 @@ Go to Appearance → Customize → AP Luxury Business Info.
 - [ ] Add Instagram URL.
 - [ ] Add Google Map embed or map text.
 
+## Homepage and Offers
+
+Go to Appearance → Customize → AP Luxury Homepage.
+
+- [ ] Confirm hero kicker.
+- [ ] Confirm hero headline.
+- [ ] Confirm hero paragraph.
+- [ ] Confirm first-visit popup offer text.
+- [ ] Test popup close button.
+- [ ] Connect newsletter or email capture tool.
+
 ## Pages
 
 - [ ] Home page displays correctly.
 - [ ] About page content finalized.
 - [ ] Services prices verified.
+- [ ] Aftercare page reviewed.
 - [ ] Booking page widget connected.
 - [ ] Gallery images replaced.
-- [ ] Promotions finalized.
+- [ ] Promotions, gift cards, and membership offers finalized.
 - [ ] Testimonials or Google Reviews connected.
+- [ ] FAQ page reviewed.
+- [ ] Service Area page reviewed for local SEO.
+- [ ] Privacy Policy page reviewed.
+- [ ] Terms page reviewed.
 - [ ] Contact page verified.
 
 ## Plugins
@@ -43,6 +59,13 @@ Go to Appearance → Customize → AP Luxury Business Info.
 - [ ] Image optimization plugin installed.
 - [ ] WooCommerce installed only if selling packages, products, or gift cards.
 
+## Shortcodes
+
+- [ ] Test `[ap_booking_button]`.
+- [ ] Test `[ap_phone]`.
+- [ ] Test `[ap_address]`.
+- [ ] Test `[ap_offer]`.
+
 ## Quality Check
 
 - [ ] Test mobile navigation.
@@ -54,6 +77,8 @@ Go to Appearance → Customize → AP Luxury Business Info.
 - [ ] Check spelling and pricing.
 - [ ] Check Google Business Profile links.
 - [ ] Verify schema with an SEO plugin or rich results tool.
+- [ ] Check footer Privacy Policy and Terms links.
+- [ ] Test search page and 404 page.
 
 ## Launch
 
