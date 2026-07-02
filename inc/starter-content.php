@@ -23,10 +23,35 @@ function ap_luxury_starter_content() {
 				'post_title'   => 'Services',
 				'post_content' => 'Eyebrow threading, facial threading, waxing, facials, and beauty services.',
 			),
+			'aftercare' => array(
+				'post_type'    => 'page',
+				'post_title'   => 'Aftercare',
+				'post_content' => 'Simple aftercare guidance for threading, waxing, and facials.',
+			),
+			'gallery' => array(
+				'post_type'    => 'page',
+				'post_title'   => 'Gallery',
+				'post_content' => 'A look inside AP\'s Thread Salon.',
+			),
 			'booking' => array(
 				'post_type'    => 'page',
 				'post_title'   => 'Booking',
 				'post_content' => 'Book your appointment at AP\'s Thread Salon.',
+			),
+			'promotions' => array(
+				'post_type'    => 'page',
+				'post_title'   => 'Promotions',
+				'post_content' => 'First-visit offers, gift cards, and beauty membership details.',
+			),
+			'testimonials' => array(
+				'post_type'    => 'page',
+				'post_title'   => 'Testimonials',
+				'post_content' => 'Client reviews and salon feedback.',
+			),
+			'faq' => array(
+				'post_type'    => 'page',
+				'post_title'   => 'FAQ',
+				'post_content' => 'Helpful answers before booking your salon visit.',
 			),
 			'contact' => array(
 				'post_type'    => 'page',
@@ -46,6 +71,11 @@ function ap_luxury_starter_content() {
 					'link_home',
 					'page_about',
 					'page_services',
+					'page_aftercare',
+					'page_gallery',
+					'page_promotions',
+					'page_testimonials',
+					'page_faq',
 					'page_booking',
 					'page_contact',
 				),
