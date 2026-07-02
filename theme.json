@@ -5,11 +5,11 @@
     "appearanceTools": true,
     "color": {
       "palette": [
-        { "slug": "emerald", "name": "AP Emerald", "color": "#0f3b2f" },
-        { "slug": "gold", "name": "AP Gold", "color": "#c6a25a" },
-        { "slug": "ivory", "name": "AP Ivory", "color": "#faf8f4" },
-        { "slug": "beige", "name": "AP Beige", "color": "#f2ece3" },
-        { "slug": "charcoal", "name": "AP Charcoal", "color": "#252525" }
+        { "slug": "dusty-rose", "name": "AP Dusty Rose", "color": "#6f4e57" },
+        { "slug": "champagne", "name": "AP Champagne", "color": "#c8a96a" },
+        { "slug": "ivory", "name": "AP Ivory", "color": "#fff9f6" },
+        { "slug": "soft-nude", "name": "AP Soft Nude", "color": "#f3e6e2" },
+        { "slug": "charcoal", "name": "AP Charcoal", "color": "#2a2526" }
       ]
     },
     "typography": {
@@ -26,8 +26,8 @@
   },
   "styles": {
     "color": {
-      "background": "#faf8f4",
-      "text": "#252525"
+      "background": "#fff9f6",
+      "text": "#2a2526"
     },
     "typography": {
       "fontFamily": "Inter, Arial, sans-serif"
@@ -40,7 +40,7 @@
       },
       "link": {
         "color": {
-          "text": "#0f3b2f"
+          "text": "#6f4e57"
         }
       }
     }
