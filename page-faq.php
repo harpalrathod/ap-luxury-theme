@@ -5,14 +5,7 @@
  * @package AP_Luxury
  */
 get_header();
-$faqs = array(
-	array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
-	array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
-	array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
-	array( 'Do you offer facial threading?', 'Yes. AP\'s Thread Salon offers targeted facial threading services such as upper lip, chin, sides, and full face threading.' ),
-	array( 'Do you offer waxing?', 'Yes. Waxing services are available for selected areas. Visit the Services page or book an appointment for details.' ),
-	array( 'Where are you located?', ap_luxury_get_option( 'ap_luxury_address', 'Rockwall, TX' ) ),
-);
+$faqs = ap_luxury_faqs_data();
 ?>
 <section class="ap-section page-hero small-hero">
 	<div class="ap-container content-narrow centered">
