@@ -20,7 +20,7 @@ function ap_luxury_customize_register( $wp_customize ) {
 
 	$business_fields = array(
 		'ap_luxury_phone'       => array( 'Phone Number', '+1 469 769 1055' ),
-		'ap_luxury_address'     => array( 'Address', 'Rockwall, TX' ),
+		'ap_luxury_address'     => array( 'Address', '577 East Interstate 30, Rockwall, TX 75087' ),
 		'ap_luxury_hours'       => array( 'Business Hours', 'Monday - Saturday: 9:30 AM - 7:00 PM | Sunday: 12:00 PM - 5:00 PM' ),
 		'ap_luxury_booking'     => array( 'Booking URL', home_url( '/booking/' ) ),
 		'ap_luxury_instagram'   => array( 'Instagram URL', '#' ),
