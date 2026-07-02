@@ -5,6 +5,8 @@
  * @package AP_Luxury
  */
 $highlights = ap_luxury_service_highlights_data();
+$ap_phone   = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
+$tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 ?>
 <section class="ap-section service-highlights-section">
 	<div class="ap-container">
@@ -17,7 +19,7 @@ $highlights = ap_luxury_service_highlights_data();
 				<article class="service-highlight-card reveal-up">
 					<h3><?php echo esc_html( $highlight[0] ); ?></h3>
 					<p><?php echo esc_html( $highlight[1] ); ?></p>
-					<a href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book Now</a>
+					<a href="tel:<?php echo esc_attr( $tel_link ); ?>">Call Now</a>
 				</article>
 			<?php endforeach; ?>
 		</div>
