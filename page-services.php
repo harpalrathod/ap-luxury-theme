@@ -5,27 +5,7 @@
  * @package AP_Luxury
  */
 get_header();
-$groups = array(
-	'Eyebrow Threading' => array(
-		array( 'Eyebrow Threading', 'Signature brow shaping with clean definition.', '$12+' ),
-		array( 'Eyebrow Cleanup', 'Maintenance for already-shaped brows.', '$10+' ),
-		array( 'Eyebrow + Upper Lip', 'A polished everyday pairing.', '$18+' ),
-	),
-	'Facial Threading' => array(
-		array( 'Upper Lip', 'Gentle, precise hair removal.', '$7+' ),
-		array( 'Chin', 'Clean finish for the lower face.', '$8+' ),
-		array( 'Full Face Threading', 'Smooth, refined facial finish.', '$35+' ),
-	),
-	'Waxing' => array(
-		array( 'Underarms', 'Quick, hygienic waxing service.', '$15+' ),
-		array( 'Arms', 'Smooth finish for arms.', '$30+' ),
-		array( 'Legs', 'Comfortable waxing with clean results.', '$45+' ),
-	),
-	'Tinting & Add-ons' => array(
-		array( 'Eyebrow Tinting', 'Soft color enhancement for fuller-looking brows.', '$20+' ),
-		array( 'Facial Add-on', 'Refresh your service with extra glow care.', '$15+' ),
-	),
-);
+$groups = ap_luxury_services_data();
 ?>
 <section class="ap-section page-hero small-hero">
 	<div class="ap-container content-narrow centered">
