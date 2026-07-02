@@ -34,6 +34,7 @@ $groups = array(
 		<p>Choose your service and book with confidence. Pricing may vary based on final service selection.</p>
 	</div>
 </section>
+<?php get_template_part( 'template-parts/service-highlights' ); ?>
 <section class="ap-section pricing-section">
 	<div class="ap-container">
 		<?php foreach ( $groups as $group => $items ) : ?>
