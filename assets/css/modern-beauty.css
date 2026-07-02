@@ -1,0 +1,28 @@
+/* Modern beauty salon color palette: dusty rose, champagne, ivory, charcoal, soft nude. */
+:root{
+	--emerald:#6f4e57;
+	--gold:#c8a96a;
+	--ivory:#fff9f6;
+	--beige:#f3e6e2;
+	--white:#ffffff;
+	--charcoal:#2a2526;
+	--muted:#766d6b;
+	--shadow:0 24px 70px rgba(111,78,87,.14);
+}
+body{background:var(--ivory);color:var(--charcoal)}
+.site-header.is-scrolled,.body-not-home .site-header{background:rgba(255,249,246,.96);color:var(--emerald)}
+.hero-bg{background:linear-gradient(120deg,rgba(111,78,87,.9),rgba(111,78,87,.48)),radial-gradient(circle at 80% 35%,rgba(200,169,106,.24),transparent 34%),linear-gradient(135deg,#6f4e57,#b98b91 45%,#fff9f6)}
+.page-hero{background:linear-gradient(135deg,#6f4e57,#b98b91);color:#fff}
+.why-section{background:var(--beige)}
+.luxury-panel,.site-footer{background:var(--emerald)}
+.service-image{background:linear-gradient(135deg,#f3e6e2,#fff 45%,#dfc7bf)}
+.service-card:nth-child(even) .service-image{background:linear-gradient(135deg,#b98b91,#fff4ef)}
+.image-strip div{background:linear-gradient(135deg,#fff4ef,#c8a96a)}
+.image-strip div:nth-child(2),.image-strip div:nth-child(4){background:linear-gradient(135deg,#6f4e57,#fff4ef)}
+.map-card{background:linear-gradient(135deg,#f3e6e2,#fff)}
+.portrait-card,.team-photo,.gallery-item{background:linear-gradient(135deg,#6f4e57,#fff4ef 55%,#c8a96a)}
+.gallery-item:nth-child(2n){background:linear-gradient(135deg,#f3e6e2,#fff,#c8a96a)}
+.gallery-item:nth-child(3n){background:linear-gradient(135deg,#6f4e57,#b98b91,#fff4ef)}
+.btn-outline.dark{border-color:var(--emerald);color:var(--emerald)}
+.pricing-row a{background:var(--emerald);color:#fff}
+.header-cta,.btn-gold,.floating-book{background:var(--gold);color:#fff}
