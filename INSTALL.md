@@ -28,6 +28,8 @@ Create these WordPress pages and assign the matching template from the Page sett
 - FAQ — Template: FAQ
 - Service Area — Template: Service Area
 - Setup Guide — Template: Theme Setup Guide
+- Privacy Policy — Template: Privacy Policy
+- Terms — Template: Terms of Service
 - Contact — Template: Contact
 
 ## 4. Set the homepage
@@ -54,7 +56,7 @@ Go to **Appearance → Menus** and create a menu with:
 
 Assign it to **Primary Menu**.
 
-Create a smaller footer menu and assign it to **Footer Menu**.
+Create a smaller footer menu and assign it to **Footer Menu**. Include Privacy Policy and Terms in the footer menu.
 
 ## 6. Add your logo
 
