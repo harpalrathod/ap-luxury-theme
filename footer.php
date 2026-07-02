@@ -4,9 +4,9 @@
  *
  * @package AP_Luxury
  */
-$ap_phone   = ap_luxury_get_option( 'ap_luxury_phone', '+1 000 000 0000' );
-$ap_address = ap_luxury_get_option( 'ap_luxury_address', 'Rockwall, TX' );
-$ap_hours   = ap_luxury_get_option( 'ap_luxury_hours', 'Monday - Saturday: 10 AM - 7 PM' );
+$ap_phone   = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
+$ap_address = ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' );
+$ap_hours   = ap_luxury_get_option( 'ap_luxury_hours', 'Monday - Saturday: 9:30 AM - 7:00 PM | Sunday: 12:00 PM - 5:00 PM' );
 $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 ?>
 </main>
@@ -32,7 +32,7 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		<div>
 			<h2><?php esc_html_e( 'Visit', 'ap-luxury' ); ?></h2>
 			<p><?php echo esc_html( $ap_address ); ?><br><a href="tel:<?php echo esc_attr( $tel_link ); ?>"><?php echo esc_html( $ap_phone ); ?></a><br><?php echo esc_html( $ap_hours ); ?></p>
-			<a class="footer-book" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>"><?php esc_html_e( 'Book Appointment', 'ap-luxury' ); ?></a>
+			<a class="footer-book" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 		</div>
 	</div>
 	<div class="footer-bottom">
@@ -43,7 +43,7 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 	</div>
 </footer>
 <?php get_template_part( 'template-parts/popup-offer' ); ?>
-<a class="floating-book" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>"><?php esc_html_e( 'Book Now', 'ap-luxury' ); ?></a>
+<a class="floating-book" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 <?php wp_footer(); ?>
 </body>
 </html>
