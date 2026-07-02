@@ -91,6 +91,8 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 	</div>
 </section>
 
+<?php get_template_part( 'template-parts/instagram-feed' ); ?>
+
 <section class="ap-section testimonials-section">
 	<div class="ap-container content-narrow centered">
 		<p class="eyebrow">Client Love</p>
