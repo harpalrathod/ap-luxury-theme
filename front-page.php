@@ -6,10 +6,13 @@
  */
 
 get_header();
-$hero_kicker = ap_luxury_get_option( 'ap_luxury_hero_kicker', "Rockwall's Boutique Threading Studio" );
-$hero_title  = ap_luxury_get_option( 'ap_luxury_hero_title', 'Beautiful Brows. Timeless Confidence.' );
-$hero_text   = ap_luxury_get_option( 'ap_luxury_hero_text', 'Precision eyebrow threading, facial threading, waxing, and glow-focused beauty care in a calm luxury setting.' );
-$ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' );
+$hero_kicker   = ap_luxury_get_option( 'ap_luxury_hero_kicker', "Rockwall's Boutique Threading Studio" );
+$hero_title    = ap_luxury_get_option( 'ap_luxury_hero_title', 'Beautiful Brows. Timeless Confidence.' );
+$hero_text     = ap_luxury_get_option( 'ap_luxury_hero_text', 'Precision eyebrow threading, facial threading, waxing, and glow-focused beauty care in a calm luxury setting.' );
+$ap_address    = ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' );
+$ap_phone      = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
+$tel_link      = preg_replace( '/[^0-9+]/', '', $ap_phone );
+$map_direction = 'https://www.google.com/maps/dir/?api=1&destination=' . rawurlencode( $ap_address );
 ?>
 <section class="hero hero-luxury">
 	<div class="hero-bg" aria-hidden="true"></div>
@@ -18,7 +21,7 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 		<h1><?php echo esc_html( $hero_title ); ?></h1>
 		<p class="hero-copy"><?php echo esc_html( $hero_text ); ?></p>
 		<div class="hero-actions">
-			<a class="btn btn-gold" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book Appointment</a>
+			<a class="btn btn-gold" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call Now</a>
 			<a class="btn btn-outline" href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Explore Services</a>
 		</div>
 	</div>
@@ -29,7 +32,7 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 		<div class="section-kicker">Welcome</div>
 		<div>
 			<h2>Beauty shaped with precision, care, and quiet elegance.</h2>
-			<p>At AP's Thread Salon, every appointment is designed around the details: clean shaping, comfortable technique, refined results, and a relaxing client experience.</p>
+			<p>At AP's Thread Salon, every visit is designed around the details: clean shaping, comfortable technique, refined results, and a relaxing client experience.</p>
 		</div>
 	</div>
 </section>
@@ -43,10 +46,10 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 		<div class="service-grid">
 			<?php
 			$services = array(
-				array( 'Eyebrow Threading', 'Clean, balanced shaping designed to frame your natural features.', 'From $12' ),
-				array( 'Facial Threading', 'Gentle hair removal for a smooth, polished finish.', 'From $10' ),
-				array( 'Waxing', 'Efficient, hygienic waxing services for silky skin.', 'From $15' ),
-				array( 'Facials', 'Relaxing treatments to refresh and restore your glow.', 'From $45' ),
+				array( 'Threading', 'Clean, balanced shaping designed to frame your natural features.', 'From $3' ),
+				array( 'Waxing', 'Efficient waxing services for smooth skin.', 'From $5' ),
+				array( 'Facials', 'Appointment-only treatments to refresh and restore your glow.', 'From $40' ),
+				array( 'Hair Services', 'Hair cut, color, styling, massage, and herbal hair care.', 'From $15' ),
 			);
 			foreach ( $services as $service ) :
 				?>
@@ -56,7 +59,7 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 						<h3><?php echo esc_html( $service[0] ); ?></h3>
 						<p><?php echo esc_html( $service[1] ); ?></p>
 						<span><?php echo esc_html( $service[2] ); ?></span>
-						<a href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book This Service</a>
+						<a href="tel:<?php echo esc_attr( $tel_link ); ?>">Call Now</a>
 					</div>
 				</article>
 			<?php endforeach; ?>
@@ -109,10 +112,14 @@ $ap_map      = ap_luxury_get_option( 'ap_luxury_map_embed', 'Google Map Embed' )
 		<div>
 			<p class="eyebrow">Visit Us</p>
 			<h2>AP's Thread Salon in Rockwall, TX</h2>
-			<p>Book your next threading, waxing, or facial appointment and experience beauty care with a premium boutique touch.</p>
-			<a class="btn btn-gold" href="<?php echo esc_url( ap_luxury_booking_url() ); ?>">Book Now</a>
+			<p>Call for threading, waxing, facials, hair services, and appointment-only beauty care with a premium boutique touch.</p>
+			<a class="btn btn-gold" href="<?php echo esc_url( $map_direction ); ?>" target="_blank" rel="noopener">Get Directions</a>
+			<a class="btn btn-outline dark" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 		</div>
-		<div class="map-card"><?php echo esc_html( $ap_map ); ?></div>
+		<a class="map-card map-card-link" href="<?php echo esc_url( $map_direction ); ?>" target="_blank" rel="noopener">
+			<span>Open Google Map Directions</span>
+			<strong><?php echo esc_html( $ap_address ); ?></strong>
+		</a>
 	</div>
 </section>
 <?php
