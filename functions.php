@@ -9,6 +9,8 @@ if ( ! defined( 'AP_LUXURY_VERSION' ) ) {
 	define( 'AP_LUXURY_VERSION', '1.0.0' );
 }
 
+require_once get_template_directory() . '/inc/customizer.php';
+
 function ap_luxury_setup() {
 	load_theme_textdomain( 'ap-luxury', get_template_directory() . '/languages' );
 	add_theme_support( 'title-tag' );
@@ -42,7 +44,7 @@ function ap_luxury_excerpt_more( $more ) { return '...'; }
 add_filter( 'excerpt_more', 'ap_luxury_excerpt_more' );
 
 function ap_luxury_booking_url() {
-	return apply_filters( 'ap_luxury_booking_url', home_url( '/booking/' ) );
+	return apply_filters( 'ap_luxury_booking_url', ap_luxury_get_option( 'ap_luxury_booking', home_url( '/booking/' ) ) );
 }
 
 function ap_luxury_fallback_menu() {
