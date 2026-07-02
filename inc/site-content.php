@@ -101,16 +101,17 @@ function ap_luxury_service_highlights_data() {
 
 function ap_luxury_promotions_data() {
 	return array(
+		array( 'Loyalty', 'Fivestars by SumUp Rewards', 'Join our loyalty program in store and earn rewards on eligible AP\'s Thread Salon visits.', 'Join In Store' ),
 		array( 'New Clients', 'First Visit Glow', 'A refined welcome offer for first-time guests booking threading, waxing, or facial care.', 'Claim Offer' ),
 		array( 'Referral', 'Share the AP Look', 'Refer a friend and receive a thank-you reward after their first visit.', 'Ask Us' ),
 		array( 'Gift Cards', 'Give Beautiful Brows', 'Promote seasonal gift card offers for birthdays, holidays, and self-care surprises.', 'Gift Details' ),
-		array( 'Membership', 'Monthly Brow Care', 'Build a regular beauty routine with priority maintenance and special savings.', 'Learn More' ),
 	);
 }
 
 function ap_luxury_faqs_data() {
 	return array(
 		array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
+		array( 'Do you have a loyalty program?', 'Yes. AP\'s Thread Salon uses Fivestars by SumUp for loyalty rewards. Ask us in store to join.' ),
 		array( 'Do you offer threading?', 'Yes. AP\'s Thread Salon offers eyebrows, upper lip, lower lip, side burns, chin, full face, forehead, and men eyebrow threading.' ),
 		array( 'Do you offer waxing?', 'Yes. AP\'s Thread Salon offers face, arms, under arms, legs, bikini, Brazilian, back, stomach, and full body waxing services.' ),
 		array( 'Do facials require an appointment?', 'Yes. Facial services are appointment only.' ),
@@ -118,7 +119,6 @@ function ap_luxury_faqs_data() {
 		array( 'Do you offer hair color?', 'Yes. AP\'s Thread Salon offers root touch-up, full hair color, men\'s hair color, highlights, deep conditioning, and hair wash services.' ),
 		array( 'Do you offer massage and herbal hair care?', 'Yes. AP\'s Thread Salon offers hot oil head massage, herbal hair mask, and herbal henna for hair.' ),
 		array( 'Do you offer henna tattoos?', 'Yes. Henna tattoos are available under Special Services.' ),
-		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
 		array( 'Where are you located?', ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' ) ),
 	);
 }
