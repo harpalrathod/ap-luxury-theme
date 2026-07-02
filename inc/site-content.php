@@ -10,6 +10,16 @@
 
 function ap_luxury_services_data() {
 	return array(
+		'Threading' => array(
+			array( 'Eyebrows', 'Clean eyebrow threading and shaping.', '$9.00' ),
+			array( 'Upper Lip', 'Precise upper lip threading.', '$6.00' ),
+			array( 'Lower Lip', 'Precise lower lip threading.', '$3.00' ),
+			array( 'Side Burns', 'Clean side burn threading.', '$10.00' ),
+			array( 'Chin', 'Chin threading service.', '$8.00 & up' ),
+			array( 'Full face', 'Complete facial threading service.', '$32.00 & up' ),
+			array( 'Forehead', 'Forehead threading service.', '$6.00' ),
+			array( 'Men Eyebrows', 'Eyebrow threading for men.', '$10.00' ),
+		),
 		'Hair Cut' => array(
 			array( 'Hair cut', 'Fresh haircut and salon shaping.', '$24.00 & up' ),
 			array( 'Dandruff treatment', 'Scalp-focused treatment for a cleaner, refreshed feel.', '$30.00 & up' ),
@@ -34,16 +44,6 @@ function ap_luxury_services_data() {
 		'Special Services' => array(
 			array( 'Henna Tattoos', 'Beautiful henna tattoo designs for special occasions and everyday style.', '$15 & up' ),
 		),
-		'Eyebrow Threading' => array(
-			array( 'Eyebrow Threading', 'Signature brow shaping with clean definition.', '$12+' ),
-			array( 'Eyebrow Cleanup', 'Maintenance for already-shaped brows.', '$10+' ),
-			array( 'Eyebrow + Upper Lip', 'A polished everyday pairing.', '$18+' ),
-		),
-		'Facial Threading' => array(
-			array( 'Upper Lip', 'Gentle, precise hair removal.', '$7+' ),
-			array( 'Chin', 'Clean finish for the lower face.', '$8+' ),
-			array( 'Full Face Threading', 'Smooth, refined facial finish.', '$35+' ),
-		),
 		'Waxing' => array(
 			array( 'Underarms', 'Quick, hygienic waxing service.', '$15+' ),
 			array( 'Arms', 'Smooth finish for arms.', '$30+' ),
@@ -58,10 +58,10 @@ function ap_luxury_services_data() {
 
 function ap_luxury_service_highlights_data() {
 	return array(
+		array( 'Threading Services', 'Eyebrows, lips, chin, side burns, forehead, full face, and men eyebrow threading.' ),
 		array( 'Hair Cut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
 		array( 'Hair Color Services', 'Root touch-ups, full color, highlights, men\'s color, deep conditioning, and hair wash services.' ),
-		array( 'Massage and Herbal Hair Care', 'Hot oil head massage, herbal hair mask, and herbal henna services for a refreshed salon experience.' ),
-		array( 'Special Services', 'Henna tattoos and beauty services for special occasions and everyday style.' ),
+		array( 'Massage and Special Services', 'Hot oil head massage, herbal hair care, herbal henna, and henna tattoos.' ),
 	);
 }
 
@@ -77,13 +77,13 @@ function ap_luxury_promotions_data() {
 function ap_luxury_faqs_data() {
 	return array(
 		array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
+		array( 'Do you offer threading?', 'Yes. AP\'s Thread Salon offers eyebrows, upper lip, lower lip, side burns, chin, full face, forehead, and men eyebrow threading.' ),
 		array( 'Do you offer haircuts?', 'Yes. AP\'s Thread Salon offers haircut and styling services including hair cut, long layer, blow-dry, straightening, and dandruff treatment.' ),
 		array( 'Do you offer hair color?', 'Yes. AP\'s Thread Salon offers root touch-up, full hair color, men\'s hair color, highlights, deep conditioning, and hair wash services.' ),
 		array( 'Do you offer massage and herbal hair care?', 'Yes. AP\'s Thread Salon offers hot oil head massage, herbal hair mask, and herbal henna for hair.' ),
 		array( 'Do you offer henna tattoos?', 'Yes. Henna tattoos are available under Special Services.' ),
 		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
 		array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
-		array( 'Do you offer facial threading?', 'Yes. AP\'s Thread Salon offers targeted facial threading services such as upper lip, chin, sides, and full face threading.' ),
 		array( 'Do you offer waxing?', 'Yes. Waxing services are available for selected areas. Visit the Services page or call for details.' ),
 		array( 'Where are you located?', ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' ) ),
 	);
