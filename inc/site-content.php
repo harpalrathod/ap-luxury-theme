@@ -20,6 +20,45 @@ function ap_luxury_services_data() {
 			array( 'Forehead', 'Forehead threading service.', '$6.00' ),
 			array( 'Men Eyebrows', 'Eyebrow threading for men.', '$10.00' ),
 		),
+		'Waxing' => array(
+			array( 'Eyebrows', 'Eyebrow waxing service.', '$15.00' ),
+			array( 'Upper Lip', 'Upper lip waxing service.', '$5.00' ),
+			array( 'Nose Top', 'Nose top waxing service.', '$5.00' ),
+			array( 'Nose Inside', 'Inside nose waxing service.', '$10.00' ),
+			array( 'Chin', 'Chin waxing service.', '$7.00 & up' ),
+			array( 'Arms', 'Arm waxing service.', '$25.00 & up' ),
+			array( 'Ear', 'Both ears waxing service.', '$10.00' ),
+			array( 'Under Arms', 'Under arms waxing service.', '$11.00' ),
+			array( 'Legs half', 'Half legs waxing service.', '$25.00' ),
+			array( 'Leg full', 'Full leg waxing service.', '$45.00 & up' ),
+			array( 'Bikini', 'Bikini waxing. Appointment only.', '$40.00 & up' ),
+			array( 'Brazilian', 'Brazilian waxing. Appointment only.', '$50.00 & up' ),
+			array( 'Brazilian Chocolate', 'Chocolate Brazilian waxing service.', '$55.00' ),
+			array( 'Stomach', 'Stomach waxing service.', '$15.00' ),
+			array( 'Back Women', 'Back waxing for women.', '$35.00' ),
+			array( 'Back Men', 'Back waxing for men.', '$45.00 & up' ),
+			array( 'Full body waxing', 'Full body waxing. Appointment only.', '$149.00 & up' ),
+			array( 'Full Body Chocolate', 'Chocolate full body waxing service.', '$169.00' ),
+		),
+		'Facials' => array(
+			array( 'Clean Up', 'Facial clean up service. Appointment only.', '$40.00' ),
+			array( 'AloeVera Facial', 'New aloe vera facial service. Appointment only.', '$60.00' ),
+			array( 'Shahnaz Gold Facial', 'Gold facial service. Appointment only.', '$50.00' ),
+			array( 'Neem Facial', 'New neem facial service. Appointment only.', '$155.00' ),
+			array( 'Rose Facial', 'New rose facial service. Appointment only.', '$120.00' ),
+			array( 'Cucumber Facial', 'Cucumber facial service. Appointment only.', '$70.00' ),
+			array( 'Chocolate Facial', 'New chocolate facial service. Appointment only.', '$65.00' ),
+			array( 'Acne Facial', 'Acne facial service. Appointment only.', '$75.00' ),
+			array( 'Face skin Polish', 'Face skin polish service. Appointment only.', '$20.00 & up' ),
+			array( 'Underarm Bleach', 'Underarm bleach service. Appointment only.', '$15.00' ),
+			array( 'Papaya Facial Treatment', 'Targets sun damage, hyper pigmentation, uneven skin tone, dryness, fine lines, wrinkles, and enlarged pores with Vitamin A and C for smoother glowing skin.', '$85.00' ),
+			array( 'Oxygen Facial', 'New oxygen facial that purifies the skin, brightens, lightens, and tightens with Vitamin C and antioxidants.', '$105.00' ),
+			array( 'BioActive Collagen', 'New anti-aging collagen treatment for aging, sun damage, discoloration, and acne scarring support.', '$95.00' ),
+			array( 'European Facial', 'New European facial to cleanse, condition, moisturize, rejuvenate, and relax facial tension.', '$85.00' ),
+			array( 'Back Facial', 'Back facial for clogged pores, back acne, dehydrated skin, uneven tone, exfoliation, and muscle relaxation.', '$50.00' ),
+			array( 'Wine Facial', 'New wine facial for moisturization, firmness, elasticity, glow, and replenished moisture.', '$125.00' ),
+			array( 'Arm and leg Facial Massage', 'Arm and leg facial massage. For women only.', '$80.00 & up' ),
+		),
 		'Hair Cut' => array(
 			array( 'Hair cut', 'Fresh haircut and salon shaping.', '$24.00 & up' ),
 			array( 'Dandruff treatment', 'Scalp-focused treatment for a cleaner, refreshed feel.', '$30.00 & up' ),
@@ -44,11 +83,6 @@ function ap_luxury_services_data() {
 		'Special Services' => array(
 			array( 'Henna Tattoos', 'Beautiful henna tattoo designs for special occasions and everyday style.', '$15 & up' ),
 		),
-		'Waxing' => array(
-			array( 'Underarms', 'Quick, hygienic waxing service.', '$15+' ),
-			array( 'Arms', 'Smooth finish for arms.', '$30+' ),
-			array( 'Legs', 'Comfortable waxing with clean results.', '$45+' ),
-		),
 		'Tinting & Add-ons' => array(
 			array( 'Eyebrow Tinting', 'Soft color enhancement for fuller-looking brows.', '$20+' ),
 			array( 'Facial Add-on', 'Refresh your service with extra glow care.', '$15+' ),
@@ -59,9 +93,9 @@ function ap_luxury_services_data() {
 function ap_luxury_service_highlights_data() {
 	return array(
 		array( 'Threading Services', 'Eyebrows, lips, chin, side burns, forehead, full face, and men eyebrow threading.' ),
-		array( 'Hair Cut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
-		array( 'Hair Color Services', 'Root touch-ups, full color, highlights, men\'s color, deep conditioning, and hair wash services.' ),
-		array( 'Massage and Special Services', 'Hot oil head massage, herbal hair care, herbal henna, and henna tattoos.' ),
+		array( 'Waxing Services', 'Face, arms, under arms, legs, bikini, Brazilian, back, stomach, and full body waxing.' ),
+		array( 'Facials and Skin Care', 'Clean up, classic facials, advanced skin treatments, back facial, and facial massage services.' ),
+		array( 'Hair and Special Services', 'Hair cuts, color, massage, herbal hair care, henna, and beauty services.' ),
 	);
 }
 
@@ -78,13 +112,13 @@ function ap_luxury_faqs_data() {
 	return array(
 		array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
 		array( 'Do you offer threading?', 'Yes. AP\'s Thread Salon offers eyebrows, upper lip, lower lip, side burns, chin, full face, forehead, and men eyebrow threading.' ),
+		array( 'Do you offer waxing?', 'Yes. AP\'s Thread Salon offers face, arms, under arms, legs, bikini, Brazilian, back, stomach, and full body waxing services.' ),
+		array( 'Do facials require an appointment?', 'Yes. Facial services are appointment only.' ),
 		array( 'Do you offer haircuts?', 'Yes. AP\'s Thread Salon offers haircut and styling services including hair cut, long layer, blow-dry, straightening, and dandruff treatment.' ),
 		array( 'Do you offer hair color?', 'Yes. AP\'s Thread Salon offers root touch-up, full hair color, men\'s hair color, highlights, deep conditioning, and hair wash services.' ),
 		array( 'Do you offer massage and herbal hair care?', 'Yes. AP\'s Thread Salon offers hot oil head massage, herbal hair mask, and herbal henna for hair.' ),
 		array( 'Do you offer henna tattoos?', 'Yes. Henna tattoos are available under Special Services.' ),
 		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
-		array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
-		array( 'Do you offer waxing?', 'Yes. Waxing services are available for selected areas. Visit the Services page or call for details.' ),
 		array( 'Where are you located?', ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' ) ),
 	);
 }
