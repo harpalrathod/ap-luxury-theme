@@ -11,25 +11,15 @@ if ( ! defined( 'AP_LUXURY_VERSION' ) ) {
 
 function ap_luxury_setup() {
 	load_theme_textdomain( 'ap-luxury', get_template_directory() . '/languages' );
-
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script' ) );
-	add_theme_support( 'custom-logo', array(
-		'height'      => 120,
-		'width'       => 360,
-		'flex-height' => true,
-		'flex-width'  => true,
-	) );
+	add_theme_support( 'custom-logo', array( 'height' => 120, 'width' => 360, 'flex-height' => true, 'flex-width' => true ) );
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'woocommerce' );
-
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'ap-luxury' ),
-		'footer'  => esc_html__( 'Footer Menu', 'ap-luxury' ),
-	) );
+	register_nav_menus( array( 'primary' => esc_html__( 'Primary Menu', 'ap-luxury' ), 'footer' => esc_html__( 'Footer Menu', 'ap-luxury' ) ) );
 }
 add_action( 'after_setup_theme', 'ap_luxury_setup' );
 
@@ -44,16 +34,16 @@ function ap_luxury_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ap_luxury_scripts' );
 
-function ap_luxury_excerpt_length( $length ) {
-	return 24;
-}
+function ap_luxury_excerpt_length( $length ) { return 24; }
 add_filter( 'excerpt_length', 'ap_luxury_excerpt_length' );
 
-function ap_luxury_excerpt_more( $more ) {
-	return '...';
-}
+function ap_luxury_excerpt_more( $more ) { return '...'; }
 add_filter( 'excerpt_more', 'ap_luxury_excerpt_more' );
 
 function ap_luxury_booking_url() {
 	return apply_filters( 'ap_luxury_booking_url', home_url( '/booking/' ) );
+}
+
+function ap_luxury_fallback_menu() {
+	wp_page_menu( array( 'menu_id' => 'primary-menu', 'show_home' => true ) );
 }
