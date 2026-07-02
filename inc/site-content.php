@@ -17,6 +17,15 @@ function ap_luxury_services_data() {
 			array( 'Blow-dry / Style', 'Polished blow-dry and styling finish.', '$25.00 & up' ),
 			array( 'Hair Straightening', 'Smooth styling service for a straight, finished look.', '$30.00 & up' ),
 		),
+		'Hair Color' => array(
+			array( 'Root Touch-up', 'Color refresh for root regrowth.', '$50.00 & up' ),
+			array( 'Full Hair Color', 'Full color service. Appointment only.', '$79.00 & up' ),
+			array( 'Hair Color for Men', 'Hair color service for men.', '$25.00 & up' ),
+			array( 'Full Highlights', 'Full highlight service for brighter dimension.', '$70.00 & up' ),
+			array( 'Partial Highlights', 'Partial highlight service for soft dimension.', '$35.00 & up' ),
+			array( 'Deep Conditioning', 'Conditioning treatment for softer, refreshed hair.', '$35.00 & up' ),
+			array( 'Hair Wash', 'Simple hair wash service.', '$15.00' ),
+		),
 		'Eyebrow Threading' => array(
 			array( 'Eyebrow Threading', 'Signature brow shaping with clean definition.', '$12+' ),
 			array( 'Eyebrow Cleanup', 'Maintenance for already-shaped brows.', '$10+' ),
@@ -42,9 +51,9 @@ function ap_luxury_services_data() {
 function ap_luxury_service_highlights_data() {
 	return array(
 		array( 'Haircut and Styling', 'Fresh haircuts, long layers, blow-dry styling, straightening, and scalp-focused care.' ),
+		array( 'Hair Color Services', 'Root touch-ups, full color, highlights, men\'s color, deep conditioning, and hair wash services.' ),
 		array( 'Eyebrow Threading in Rockwall', 'Precision brow shaping for clean definition, natural balance, and a polished everyday look.' ),
-		array( 'Facial Threading', 'Smooth facial hair removal for upper lip, chin, sides, and full face services with careful technique.' ),
-		array( 'Waxing Services', 'Efficient waxing options for guests who want smooth skin and a refined salon experience.' ),
+		array( 'Facial Threading and Waxing', 'Smooth facial threading and waxing options with careful salon technique.' ),
 	);
 }
 
@@ -61,6 +70,7 @@ function ap_luxury_faqs_data() {
 	return array(
 		array( 'Do I need an appointment?', 'Appointments are recommended for the smoothest experience, but walk-ins may be accepted when availability allows.' ),
 		array( 'Do you offer haircuts?', 'Yes. AP\'s Thread Salon offers haircut and styling services including hair cut, long layer, blow-dry, straightening, and dandruff treatment.' ),
+		array( 'Do you offer hair color?', 'Yes. AP\'s Thread Salon offers root touch-up, full hair color, men\'s hair color, highlights, deep conditioning, and hair wash services.' ),
 		array( 'Is eyebrow threading good for sensitive skin?', 'Threading is a precise hair removal method that does not require hot wax on the brow area, making it a popular option for many guests with sensitive skin.' ),
 		array( 'How often should I thread my eyebrows?', 'Most clients return every two to four weeks, depending on hair growth and the desired brow shape.' ),
 		array( 'Do you offer facial threading?', 'Yes. AP\'s Thread Salon offers targeted facial threading services such as upper lip, chin, sides, and full face threading.' ),
