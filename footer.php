@@ -8,6 +8,8 @@ $ap_phone   = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
 $ap_address = ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate 30, Rockwall, TX 75087' );
 $ap_hours   = ap_luxury_get_option( 'ap_luxury_hours', 'Monday - Saturday: 9:30 AM - 7:00 PM | Sunday: 12:00 PM - 5:00 PM' );
 $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
+$instagram  = 'https://www.instagram.com/apthreadsaon/';
+$facebook   = 'https://www.facebook.com/search/pages/?q=ap%27s%20thread%20salon';
 ?>
 </main>
 <footer class="site-footer">
@@ -15,6 +17,7 @@ $tel_link   = preg_replace( '/[^0-9+]/', '', $ap_phone );
 		<div class="footer-brand">
 			<div class="brand-mark footer-mark">AP</div>
 			<p><?php esc_html_e( "Premium eyebrow threading, waxing, facials, and beauty care in Rockwall, Texas.", 'ap-luxury' ); ?></p>
+			<p class="social-links"><a href="<?php echo esc_url( $facebook ); ?>" target="_blank" rel="noopener">Facebook</a> <span>|</span> <a href="<?php echo esc_url( $instagram ); ?>" target="_blank" rel="noopener">Instagram</a></p>
 		</div>
 		<div>
 			<h2><?php esc_html_e( 'Explore', 'ap-luxury' ); ?></h2>
