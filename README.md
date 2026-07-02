@@ -23,6 +23,7 @@ A custom luxury WordPress theme for **AP's Thread Salon**, a premium eyebrow thr
 - FAQ
 - Service Area
 - Setup Guide
+- Flexible Custom Page
 - Privacy Policy
 - Terms of Service
 - Contact
@@ -48,6 +49,8 @@ A custom luxury WordPress theme for **AP's Thread Salon**, a premium eyebrow thr
 - Elementor-friendly
 - SEO-focused page structure
 - Salon shortcodes
+- Central editable content file
+- Flexible page template for future pages
 - Accessibility and print CSS support
 
 ## Shortcodes
@@ -66,12 +69,14 @@ See `INSTALL.md` for full setup instructions.
 - `INSTALL.md` — setup instructions
 - `RELEASE_CHECKLIST.md` — launch checklist
 - `CONTENT_GUIDE.md` — copy and SEO guidance
+- `CUSTOMIZE_CONTENT.md` — edit repeated services, prices, FAQ, promotions, and aftercare
+- `PAGE_MANAGEMENT.md` — add, delete, rename, and manage pages
 - `FINAL_HANDOFF.md` — final theme summary
 
 ## Next Customization Steps
 
 1. Upload the real AP's Thread Salon logo under Appearance → Customize → Site Identity.
-2. Add real phone, address, hours, booking link, Instagram link, and Google map.
+2. Add real booking link, Instagram link, and Google map.
 3. Replace placeholder image gradients with salon photos.
 4. Connect booking provider, contact form, Instagram feed, and Google Reviews plugin.
 5. Verify real service prices, promotions, privacy text, and terms text.
