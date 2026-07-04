@@ -13,6 +13,7 @@ $ap_address    = ap_luxury_get_option( 'ap_luxury_address', '577 East Interstate
 $ap_phone      = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
 $tel_link      = preg_replace( '/[^0-9+]/', '', $ap_phone );
 $map_direction = 'https://www.google.com/maps/dir/?api=1&destination=' . rawurlencode( $ap_address );
+$review_link   = 'https://www.google.com/search?q=AP%27s+Thread+Salon+577+East+Interstate+30+Rockwall+TX+reviews';
 ?>
 <section class="hero hero-luxury">
 	<div class="hero-bg" aria-hidden="true"></div>
@@ -99,7 +100,7 @@ $map_direction = 'https://www.google.com/maps/dir/?api=1&destination=' . rawurle
 		<p class="eyebrow">Client Love</p>
 		<h2>Trusted for polished brows and thoughtful service.</h2>
 		<blockquote>“The attention to detail makes every visit feel special. My brows always look clean, natural, and beautifully shaped.”</blockquote>
-		<a class="btn btn-outline dark" href="<?php echo esc_url( home_url( '/testimonials/' ) ); ?>">Read Reviews</a>
+		<a class="btn btn-outline dark" href="<?php echo esc_url( $review_link ); ?>" target="_blank" rel="noopener">Read Reviews</a>
 	</div>
 </section>
 
