@@ -47,15 +47,18 @@ $review_link   = 'https://www.google.com/search?q=AP%27s+Thread+Salon+577+East+I
 		<div class="service-grid">
 			<?php
 			$services = array(
-				array( 'Threading', 'Clean, balanced shaping designed to frame your natural features.', 'From $3' ),
-				array( 'Waxing', 'Efficient waxing services for smooth skin.', 'From $5' ),
-				array( 'Facials', 'Appointment-only treatments to refresh and restore your glow.', 'From $40' ),
-				array( 'Hair Services', 'Hair cut, color, styling, massage, and herbal hair care.', 'From $15' ),
+				array( 'Threading', 'Clean, balanced shaping designed to frame your natural features.', 'From $3', 'threading-service.jpg' ),
+				array( 'Waxing', 'Efficient waxing services for smooth skin.', 'From $5', 'waxing-service.jpg' ),
+				array( 'Facials', 'Appointment-only treatments to refresh and restore your glow.', 'From $40', 'facial-service.jpg' ),
+				array( 'Hair Services', 'Hair cut, color, styling, massage, and herbal hair care.', 'From $15', 'hair-service.jpg' ),
 			);
 			foreach ( $services as $service ) :
+				$image_url = get_template_directory_uri() . '/assets/images/services/' . $service[3];
 				?>
 				<article class="service-card reveal-up">
-					<div class="service-image"></div>
+					<div class="service-image">
+						<img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( $service[0] ); ?> service at AP's Thread Salon" loading="lazy">
+					</div>
 					<div class="service-content">
 						<h3><?php echo esc_html( $service[0] ); ?></h3>
 						<p><?php echo esc_html( $service[1] ); ?></p>
