@@ -16,6 +16,9 @@ $map_direction = 'https://www.google.com/maps/dir/?api=1&destination=' . rawurle
 $review_link   = 'https://www.google.com/search?q=AP%27s+Thread+Salon+577+East+Interstate+30+Rockwall+TX+reviews';
 $map_embed     = 'https://maps.google.com/maps?q=' . rawurlencode( $ap_address ) . '&t=m&z=15&output=embed';
 ?>
+<style>
+.map-embed-card{position:relative;overflow:hidden;min-height:420px;padding:0;background:#fff}.map-embed-card iframe{display:block;width:100%;height:420px;border:0}.map-overlay-link{position:absolute;left:22px;bottom:22px;background:#fff;color:var(--emerald);border-radius:999px;padding:12px 18px;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.18)}@media(max-width:640px){.map-embed-card{min-height:320px}.map-embed-card iframe{height:320px}.map-overlay-link{left:14px;right:14px;text-align:center}}
+</style>
 <section class="hero hero-luxury">
 	<div class="hero-bg" aria-hidden="true"></div>
 	<div class="ap-container hero-inner reveal-up">
