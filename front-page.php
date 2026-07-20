@@ -14,6 +14,7 @@ $ap_phone      = ap_luxury_get_option( 'ap_luxury_phone', '+1 469 769 1055' );
 $tel_link      = preg_replace( '/[^0-9+]/', '', $ap_phone );
 $map_direction = 'https://www.google.com/maps/dir/?api=1&destination=' . rawurlencode( $ap_address );
 $review_link   = 'https://www.google.com/search?q=AP%27s+Thread+Salon+577+East+Interstate+30+Rockwall+TX+reviews';
+$map_embed     = 'https://maps.google.com/maps?q=' . rawurlencode( $ap_address ) . '&t=m&z=15&output=embed';
 ?>
 <section class="hero hero-luxury">
 	<div class="hero-bg" aria-hidden="true"></div>
@@ -118,10 +119,10 @@ $review_link   = 'https://www.google.com/search?q=AP%27s+Thread+Salon+577+East+I
 			<a class="btn btn-gold" href="<?php echo esc_url( $map_direction ); ?>" target="_blank" rel="noopener">Get Directions</a>
 			<a class="btn btn-outline dark" href="tel:<?php echo esc_attr( $tel_link ); ?>">Call <?php echo esc_html( $ap_phone ); ?></a>
 		</div>
-		<a class="map-card map-card-link" href="<?php echo esc_url( $map_direction ); ?>" target="_blank" rel="noopener">
-			<span>Open Google Map Directions</span>
-			<strong><?php echo esc_html( $ap_address ); ?></strong>
-		</a>
+		<div class="map-card map-embed-card">
+			<iframe src="<?php echo esc_url( $map_embed ); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google map for AP's Thread Salon"></iframe>
+			<a class="map-overlay-link" href="<?php echo esc_url( $map_direction ); ?>" target="_blank" rel="noopener">Open Google Map Directions</a>
+		</div>
 	</div>
 </section>
 <?php
