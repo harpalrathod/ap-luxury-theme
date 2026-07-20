@@ -1,26 +1,26 @@
 /* Service card photos for homepage Focused Beauty Essentials section. */
 .service-image{
 	background-color:#fff9f6;
-	background-size:contain;
-	background-position:center;
-	background-repeat:no-repeat;
-	min-height:255px;
+	background-size:contain !important;
+	background-position:center center !important;
+	background-repeat:no-repeat !important;
+	aspect-ratio:16/9;
+	min-height:0 !important;
+	height:auto !important;
+	width:100%;
 }
 .services-preview .service-card:nth-child(1) .service-image{
-	background-image:url('../images/services/threading-service.jpg');
+	background-image:url('../images/services/threading-service.jpg') !important;
 }
 .services-preview .service-card:nth-child(2) .service-image{
-	background-image:url('../images/services/waxing-service.jpg');
+	background-image:url('../images/services/waxing-service.jpg') !important;
 }
 .services-preview .service-card:nth-child(3) .service-image{
-	background-image:url('../images/services/facial-service.jpg');
+	background-image:url('../images/services/facial-service.jpg') !important;
 }
 .services-preview .service-card:nth-child(4) .service-image{
-	background-image:url('../images/services/hair-service.jpg');
-}
-@media(min-width:981px){
-	.service-image{min-height:235px;}
+	background-image:url('../images/services/hair-service.jpg') !important;
 }
 @media(max-width:640px){
-	.service-image{min-height:230px;}
+	.service-image{aspect-ratio:16/10;}
 }
