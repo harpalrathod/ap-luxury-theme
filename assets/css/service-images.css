@@ -1,12 +1,12 @@
-/* Service card photos for homepage Focused Beauty Essentials section. */
+/* Service card photos for homepage Focused Beauty Essentials section. Use exact 16:9 images only. */
 .service-image{
 	background-color:#fff9f6 !important;
-	background-size:contain !important;
+	background-size:100% 100% !important;
 	background-position:center center !important;
 	background-repeat:no-repeat !important;
 	aspect-ratio:16/9 !important;
-	min-height:0 !important;
 	height:auto !important;
+	min-height:0 !important;
 	width:100% !important;
 }
 .services-preview .service-card:nth-child(1) .service-image{
