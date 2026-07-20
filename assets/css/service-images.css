@@ -1,13 +1,12 @@
 /* Service card photos for homepage Focused Beauty Essentials section. */
 .service-image{
-	background-color:#fff9f6;
-	background-size:contain !important;
+	background-color:#fff9f6 !important;
+	background-size:cover !important;
 	background-position:center center !important;
 	background-repeat:no-repeat !important;
-	aspect-ratio:16/9;
+	aspect-ratio:16/9 !important;
 	min-height:0 !important;
 	height:auto !important;
-	width:100%;
 }
 .services-preview .service-card:nth-child(1) .service-image{
 	background-image:url('../images/services/threading-service.jpg') !important;
@@ -20,7 +19,4 @@
 }
 .services-preview .service-card:nth-child(4) .service-image{
 	background-image:url('../images/services/hair-service.jpg') !important;
-}
-@media(max-width:640px){
-	.service-image{aspect-ratio:16/10;}
 }
