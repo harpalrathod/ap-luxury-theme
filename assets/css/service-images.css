@@ -1,0 +1,19 @@
+/* Service card photos for homepage Focused Beauty Essentials section. */
+.service-image{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	min-height:255px;
+}
+.services-preview .service-card:nth-child(1) .service-image{
+	background-image:linear-gradient(180deg,rgba(111,78,87,.02),rgba(111,78,87,.08)),url('../images/services/threading-service.jpg');
+}
+.services-preview .service-card:nth-child(2) .service-image{
+	background-image:linear-gradient(180deg,rgba(111,78,87,.02),rgba(111,78,87,.08)),url('../images/services/waxing-service.jpg');
+}
+.services-preview .service-card:nth-child(3) .service-image{
+	background-image:linear-gradient(180deg,rgba(111,78,87,.02),rgba(111,78,87,.08)),url('../images/services/facial-service.jpg');
+}
+.services-preview .service-card:nth-child(4) .service-image{
+	background-image:linear-gradient(180deg,rgba(111,78,87,.02),rgba(111,78,87,.08)),url('../images/services/hair-service.jpg');
+}
