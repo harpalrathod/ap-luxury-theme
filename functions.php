@@ -46,9 +46,10 @@ function ap_luxury_scripts() {
 	wp_enqueue_style( 'ap-luxury-style', get_template_directory_uri() . '/assets/css/theme.css', array(), AP_LUXURY_VERSION );
 	wp_enqueue_style( 'ap-luxury-pages', get_template_directory_uri() . '/assets/css/pages.css', array( 'ap-luxury-style' ), AP_LUXURY_VERSION );
 	wp_enqueue_style( 'ap-luxury-modern-beauty', get_template_directory_uri() . '/assets/css/modern-beauty.css', array( 'ap-luxury-pages' ), AP_LUXURY_VERSION );
+	wp_enqueue_style( 'ap-luxury-service-images', get_template_directory_uri() . '/assets/css/service-images.css', array( 'ap-luxury-modern-beauty' ), AP_LUXURY_VERSION );
 	wp_enqueue_style( 'ap-luxury-accessibility', get_template_directory_uri() . '/assets/css/accessibility.css', array( 'ap-luxury-style' ), AP_LUXURY_VERSION );
 	wp_enqueue_style( 'ap-luxury-print', get_template_directory_uri() . '/assets/css/print.css', array( 'ap-luxury-style' ), AP_LUXURY_VERSION, 'print' );
-	wp_enqueue_style( 'ap-luxury-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array( 'ap-luxury-modern-beauty' ), AP_LUXURY_VERSION );
+	wp_enqueue_style( 'ap-luxury-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array( 'ap-luxury-service-images' ), AP_LUXURY_VERSION );
 	wp_enqueue_script( 'ap-luxury-theme', get_template_directory_uri() . '/assets/js/theme.js', array(), AP_LUXURY_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ap_luxury_scripts' );
